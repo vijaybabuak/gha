@@ -1,5 +1,6 @@
 name: firstworkflow
-on: [workflow_dipatch]
+on: 
+  workflow_dipatch
 jobs:
   checkout: 
     runs-on: ubuntu-latest
