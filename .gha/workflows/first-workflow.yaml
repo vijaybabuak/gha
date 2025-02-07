@@ -1,6 +1,6 @@
 name: firstworkflow
-on: [push]
-on: [worflow-dispatch]
+
+on: [worflow_dispatch]
 jobs:
   checkout: 
     runs-on: ubuntu-latest
@@ -9,5 +9,5 @@ jobs:
         uses: actions/checkout@v4
       - name: print
         run: |
-          echo "${who am i}"
-          echo "${hostname}"
+          echo "$(who am i)"
+          echo "$(hostname)"
