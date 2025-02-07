@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v4
       - name: print
         run: |
-          echo "User Name: $(who am i) \n"
+          echo "User Name: $(whoami) \n"
           echo "\n "
           echo "Host Name: $(hostname) \n"
           
