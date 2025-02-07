@@ -1,0 +1,12 @@
+name: firstworkflow
+on: [push]
+jobs:
+  checkout: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: print
+        run: |
+          echo "${who am i}"
+          echo "${hostname}"
