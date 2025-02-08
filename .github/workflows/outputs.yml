@@ -1,0 +1,14 @@
+name: output context
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a multi-line script
+        run: |
+          echo " ${{ toJSON(github }}"
+          echo "Job Status: ${{ toJSON(job) }}"
+          
